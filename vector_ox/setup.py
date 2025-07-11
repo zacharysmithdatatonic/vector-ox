@@ -11,7 +11,7 @@ from .vector_builder import VectorBuilder
 
 @click.command()
 @click.option('--board-size', default=3, help='Board size (default: 3)')
-@click.option('--num-games', default=1000, help='Number of games to generate (default: 1000)')
+@click.option('--num-games', default=5000, help='Number of games to generate (default: 5000)')
 @click.option('--skip-data-generation', is_flag=True, help='Skip data generation step')
 def main(board_size: int, num_games: int, skip_data_generation: bool):
     """Setup Vector-OX project with specified board size."""
